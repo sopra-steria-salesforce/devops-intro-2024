@@ -1,18 +1,18 @@
 {
-  "packageDirectories": [
-    {
-      "path": "force-app",
-      "default": true,
-      "package": "devops-intro-2024",
-      "versionNumber": "0.1.0.NEXT",
-      "versionDescription": ""
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true,
+            "package": "devops-intro-2024",
+            "versionNumber": "0.2.0.NEXT",
+            "versionDescription": ""
+        }
+    ],
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "56.0",
+    "packageAliases": {
+        "devops-intro-2024": "0HoP100000000hZKAQ",
+        "devops-intro-2024@0.1.0-1": "04tP10000002nELIAY"
     }
-  ],
-  "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "56.0",
-  "packageAliases": {
-    "devops-intro-2024": "0HoP100000000hZKAQ",
-    "devops-intro-2024@0.1.0-1": "04tP10000002nELIAY"
-  }
 }
