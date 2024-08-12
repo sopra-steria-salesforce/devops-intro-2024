@@ -152,19 +152,3 @@ jobs:
       codeCoverage: ${{ steps.package-version-info.outputs.codeCoverage || 0 }}
       repo_name: ${{ steps.repo-name.outputs.repository-name }}
 
-  slack-update:
-    name: slack status if package failed
-    needs: create-package
-    if: failure() && vars.SF_SLACK_ENABLED == 'true'
-    permissions:
-      contents: read
-      id-token: write
-    uses: ./.github/workflows/subflow.slack.yml
-    secrets: inherit
-    with:
-      env: ${{ ((github.ref_name == 'master' || github.ref_name == 'main') && 'sit') || github.ref_name }}
-      job_name: slack report package error
-      post-to-deployment-channel: true
-      blocks: '[{"type":"header","text":{"type":"plain_text","text":"[${{ needs.create-package.outputs.repo_name }}] Package Creation Failed in ${{ github.ref_name }}","emoji":true}},{"type":"section","fields":[{"type":"mrkdwn","text":"*Status*\n🔴 Failed to create package\n<!channel>, please fix."},{"type":"mrkdwn","text":"*Created By*\n<https://github.com/${{ github.actor }}|${{ github.actor }}>"}],"accessory":{"type":"overflow","options":[{"text":{"type":"plain_text","text":"😵 View Error"},"url":"https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"},{"text":{"type":"plain_text","text":"🖥️ View Commit"},"url":"https://github.com/${{ github.repository }}/commit/${{ github.sha }}"}]}}]'
-      text: ${{ needs.create-package.outputs.repo_name }} failed to build
-      # view blocks in https://app.slack.com/block-kit-builder
