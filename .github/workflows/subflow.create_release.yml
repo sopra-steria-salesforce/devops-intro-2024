@@ -74,8 +74,8 @@ jobs:
         with:
           allowUpdates: true
           token: ${{ secrets.GITHUB_TOKEN }}
-          prerelease: true
-          name: ${{ inputs.NEW_VERSION_TAG }} (beta)
+          prerelease: false
+          name: ${{ inputs.NEW_VERSION_TAG }}
           tag: ${{ inputs.NEW_VERSION_TAG }}
           removeArtifacts: true
           body: |

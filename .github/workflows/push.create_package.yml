@@ -34,7 +34,7 @@ jobs:
   # ################################################################### #
 
   deploy:
-    name: ${{ ((github.ref_name == 'master' || github.ref_name == 'main') && 'sit') || github.ref_name }}
+    name: deploy
     if: needs.create-package.outputs.successfullyCreatedPackage == 'true'
     needs: [create-package]
     permissions:
@@ -43,7 +43,7 @@ jobs:
     uses: ./.github/workflows/subflow.deploy_package.yml
     secrets: inherit
     with:
-      ENV: ${{ ((github.ref_name == 'master' || github.ref_name == 'main') && 'sit') || github.ref_name }} # use sit as env if master/main, because we're deployed the package to sit. Else, use branch name (preprod)
+      ENV: preprod
       PACKAGE_ID: ${{ needs.create-package.outputs.packageId }}
       TAG: ${{ needs.create-package.outputs.newVersionTag }}
       POST_TO_SLACK: true
