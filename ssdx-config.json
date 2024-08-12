@@ -1,0 +1,13 @@
+{
+	"default_config": "config/project-scratch-def.json",
+	"pre_dependencies": [],
+	"pre_deploy": [],
+	"post_deploy": [
+		{
+			"type": "permissionSet",
+			"value": "YOUR_PERMSET_HERE",
+			"continue_on_error": true
+		}
+	],
+	"post_install": []
+}
