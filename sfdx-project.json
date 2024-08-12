@@ -1,12 +1,1 @@
-{
-	"packageDirectories": [
-		{
-			"path": "force-app",
-			"default": true
-		}
-	],
-	"namespace": "",
-	"sfdcLoginUrl": "https://login.salesforce.com",
-	"sourceApiVersion": "56.0",
-	"packageAliases": {}
-}
+{ "packageDirectories": [ { "path": "force-app", "default": true, "package": "devops-intro-2024", "versionNumber": "0.1.0.NEXT", "versionDescription": "" } ], "namespace": "", "sfdcLoginUrl": "https://login.salesforce.com", "sourceApiVersion": "56.0", "packageAliases": { "devops-intro-2024": "0HoP100000000hZKAQ" } }
