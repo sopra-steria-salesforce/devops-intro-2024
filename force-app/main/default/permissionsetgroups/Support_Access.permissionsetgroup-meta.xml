@@ -4,6 +4,7 @@
     <hasActivationRequired>false</hasActivationRequired>
     <label>Support Access</label>
     <permissionSets>Accounts</permissionSets>
+    <permissionSets>Contact</permissionSets>
     <permissionSets>Lightning_Access</permissionSets>
     <permissionSets>WorldsBestAppAccess</permissionSets>
     <status>Updated</status>
