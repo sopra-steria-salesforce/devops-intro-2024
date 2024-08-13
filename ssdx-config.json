@@ -5,7 +5,7 @@
 	"post_deploy": [
 		{
 			"type": "permissionSet",
-			"value": "YOUR_PERMSET_HERE",
+			"value": "Support_Access",
 			"continue_on_error": true
 		}
 	],
