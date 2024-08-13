@@ -26,6 +26,7 @@ Make sure you've performed the steps in [Local Setup](docs/devops/local-setup.md
     - Depending on your system you can have X = `Command Line`, `Git Bash` og `Terminal`
     - Once opened, type and run `npm install`
     - This will install all necessary software for you, including code formatting.
+1. Run `npm run auth:devhub 2s_prod` → Login in to prod/DevHub
 
 # Make Changes
 
