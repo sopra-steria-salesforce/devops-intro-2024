@@ -3,5 +3,7 @@
     <description>En kjempefin permission set group!!</description>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Support Access</label>
+    <permissionSets>Accounts</permissionSets>
+    <permissionSets>Lightning_Access</permissionSets>
     <status>Updated</status>
 </PermissionSetGroup>
