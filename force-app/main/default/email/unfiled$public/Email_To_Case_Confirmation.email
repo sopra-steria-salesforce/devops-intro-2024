@@ -1,0 +1,10 @@
+<messaging:emailTemplate subject="contact@mail.com" recipientType="Contact" relatedToType="Case">
+<messaging:htmlEmailBody >
+    <html>
+        <body>
+            <p>Dear {!recipient.name},</p>
+            <p>Your message has been received and logged as case {!relatedTo.caseNumber}.</p>
+        </body>
+    </html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>
