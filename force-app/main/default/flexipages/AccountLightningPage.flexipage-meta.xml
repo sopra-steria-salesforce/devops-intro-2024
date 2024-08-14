@@ -15,6 +15,12 @@
                 <identifier>RecordNameField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.ImportantCustomer__c</fieldItem>
+                <identifier>RecordImportantCustomer__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-81fe70a0-25de-4fe8-a8f9-48d7720f028e</name>
         <type>Facet</type>
     </flexiPageRegions>
