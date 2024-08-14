@@ -5,5 +5,6 @@
     <label>Support Access</label>
     <permissionSets>Accounts</permissionSets>
     <permissionSets>Lightning_Access</permissionSets>
+    <permissionSets>Product_Read</permissionSets>
     <status>Updated</status>
 </PermissionSetGroup>
