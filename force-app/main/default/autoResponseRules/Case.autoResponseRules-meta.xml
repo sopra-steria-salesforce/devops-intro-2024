@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Email-To-Case confirmation</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>ar.marthinsen@soprasteria.com</replyToEmail>
+            <senderEmail>ar.marthinsen@soprasteria.com</senderEmail>
+            <senderName>Service</senderName>
+            <template>unfiled$public/Email_To_Case_Confirmation</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>
