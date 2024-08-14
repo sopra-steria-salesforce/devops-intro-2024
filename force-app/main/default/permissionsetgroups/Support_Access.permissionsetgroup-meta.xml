@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
     <description>En kjempefin permission set group!!</description>
     <hasActivationRequired>false</hasActivationRequired>
@@ -8,5 +8,6 @@
     <permissionSets>Contact</permissionSets>
     <permissionSets>Lightning_Access</permissionSets>
     <permissionSets>WorldsBestAppAccess</permissionSets>
+  	<permissionSets>Product_Read</permissionSets>
     <status>Updated</status>
 </PermissionSetGroup>
