@@ -41,31 +41,6 @@
 		<readable>true</readable>
 	</fieldPermissions>
 	<fieldPermissions>
-		<editable>false</editable>
-		<field>Case.IsSelfServiceClosed</field>
-		<readable>true</readable>
-	</fieldPermissions>
-	<fieldPermissions>
-		<editable>true</editable>
-		<field>Case.IsStopped</field>
-		<readable>true</readable>
-	</fieldPermissions>
-	<fieldPermissions>
-		<editable>true</editable>
-		<field>Case.IsVisibleInSelfService</field>
-		<readable>true</readable>
-	</fieldPermissions>
-	<fieldPermissions>
-		<editable>true</editable>
-		<field>Case.MilestoneStatus</field>
-		<readable>true</readable>
-	</fieldPermissions>
-	<fieldPermissions>
-		<editable>true</editable>
-		<field>Case.MilestoneStatusIcon</field>
-		<readable>true</readable>
-	</fieldPermissions>
-	<fieldPermissions>
 		<editable>true</editable>
 		<field>Case.Origin</field>
 		<readable>true</readable>
@@ -82,37 +57,12 @@
 	</fieldPermissions>
 	<fieldPermissions>
 		<editable>true</editable>
-		<field>Case.ProductId</field>
-		<readable>true</readable>
-	</fieldPermissions>
-	<fieldPermissions>
-		<editable>true</editable>
 		<field>Case.Reason</field>
 		<readable>true</readable>
 	</fieldPermissions>
 	<fieldPermissions>
 		<editable>true</editable>
-		<field>Case.ServiceContractId</field>
-		<readable>true</readable>
-	</fieldPermissions>
-	<fieldPermissions>
-		<editable>true</editable>
-		<field>Case.SlaExitDate</field>
-		<readable>true</readable>
-	</fieldPermissions>
-	<fieldPermissions>
-		<editable>true</editable>
-		<field>Case.SlaStartDate</field>
-		<readable>true</readable>
-	</fieldPermissions>
-	<fieldPermissions>
-		<editable>true</editable>
 		<field>Case.SourceId</field>
-		<readable>true</readable>
-	</fieldPermissions>
-	<fieldPermissions>
-		<editable>true</editable>
-		<field>Case.StopStartDate</field>
 		<readable>true</readable>
 	</fieldPermissions>
 	<fieldPermissions>
